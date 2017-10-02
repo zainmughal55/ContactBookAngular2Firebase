@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ContactBook</title>
+  <title>Contact Book</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 </head>
 <body>
+	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDpC_0LPg4BVvwOmMAGvWuMj2phYv_nai4",
+    authDomain: "contactbook-angular2.firebaseapp.com",
+    databaseURL: "https://contactbook-angular2.firebaseio.com",
+    projectId: "contactbook-angular2",
+    storageBucket: "",
+    messagingSenderId: "55540269853"
+  };
+  firebase.initializeApp(config);
+	</script>
   <app-root></app-root>
+
 </body>
 </html>
